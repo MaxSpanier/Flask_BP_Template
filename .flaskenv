@@ -1,2 +1,0 @@
-FLASK_APP=Flask_Template
-FLASK_ENV=development

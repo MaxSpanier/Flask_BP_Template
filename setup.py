@@ -2,20 +2,19 @@ from setuptools import setup
 
 setup(
     name="Flask_Template",
-    packages=["Flask_Template"],
+    packages=["flaskr"],
     include_package_data=True,
     install_requires=[
         "flask",
-        "python-dotenv",
     ],
 )
 
 # Rename the application
 # - Folders 
-# - name in setup 
+# - packages in setup 
 # - name in views 
 # - name in __init__
 # - name in -flaskenv
 # Add requirements to the install_requires
 # Then "pip install -e .
-# flask --app name run
+# flask --app flaskr --debug run
