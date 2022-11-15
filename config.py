@@ -3,6 +3,7 @@ class Config(object):
 
 class ProductionConfig(Config):
     # Save secret key somewhere safe
+    pass
 
 class DevelopmentConfig(Config):
     TESTING = True
