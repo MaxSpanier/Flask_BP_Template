@@ -25,6 +25,11 @@
 
 <body>
     <div class="body_container">
+        
+        <button> <a href="{{ url_for('index') }}"> Index </a></button>
+        
+        <br>
+        
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, msg in messages %}
