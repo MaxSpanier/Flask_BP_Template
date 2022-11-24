@@ -1,5 +1,7 @@
-from wtforms import Form, BooleanField, StringField, PasswordField, SubmitField, validators
+from flask_wtf import FlaskForm
+from wtforms import BooleanField, StringField, PasswordField, IntegerField, SubmitField, validators
+from wtforms.validators import DataRequired
 
-class TestForm(Form):
-  name = StringField("Name", [validators.DataRequired()])
-  submit = SubmitField("Enter")
+class TestForm(FlaskForm):
+  name = StringField("Name", validators=[DataRequired()])
+ 
