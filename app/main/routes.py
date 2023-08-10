@@ -1,4 +1,5 @@
 from app.main import bp
+from flask import redirect, current_app
 
 @bp.route("/")
 def index():
