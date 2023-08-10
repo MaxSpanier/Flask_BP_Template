@@ -12,8 +12,8 @@ setup(
 
 # Add requirements to the install_requires
 # Then "pip install -e .
-# flask --app flaskr --debug run
-# access to config variables: app.config["name"]
+# flask --app flaskr --debug run --port=5005
+# access to config variables: current_app.config["name"]
 
 # set the environment variables with: (Windows is set instead of export)
 # export SECRET_KEY="your secret key"
