@@ -1,6 +1,7 @@
-from app.main import bp
-from flask import redirect, current_app
+from app.main import bp as main
+from flask import redirect, current_app, render_template
 
-@bp.route("/")
+@main.route("/")
 def index():
-    return "<h1> Hello Main Blueprint! </h1>"
+    return render_template("global_base.html")
+

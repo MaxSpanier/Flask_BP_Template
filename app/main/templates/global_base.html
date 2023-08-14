@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links to stylesheets and js libraries/files -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('main.static', filename='global_style.css') }}">
 
     <!-- Title of the current page -->
     <title>
@@ -21,12 +21,15 @@
         {% endblock %}
     </title>
     {% endblock %}
+
+    {% block refs %}
+    {% endblock %}
 </head>
 
 <body>
     <div class="body_container">
         
-        <button> <a href="{{ url_for('index') }}"> Index </a></button>
+        <button> <a href="#"> Index </a></button> <!--  -->
         
         <br>
         
@@ -40,6 +43,7 @@
 
     
         {% block content %}
+        <h1> Hello Main Blueprint! </h1>
         {% endblock %}
     
         {% block footer %}
