@@ -3,5 +3,5 @@ from flask import redirect, current_app, render_template
 
 @main.route("/")
 def index():
-    return render_template("global_base.html")
+    return render_template("main/main.html")
 

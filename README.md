@@ -1,12 +1,11 @@
 # Flask_BP_Template
 Basic template for a flask application based on Blueprints
 
-There is one global folder for static files  
-Each BP has its own templates folder for html files
+There is one global folder for static files and template files
 
 To create a new BP follow these steps
 1. Copy the main folder and rename it
-2. Rename the html file in /templates
+2. Create a folder for the template files in the global templates folder
 3. Register the BP in the global config.py file
 4. Change the parameters in the local __init__.py file
 5. Change the parametes in the import of the routes.py file
